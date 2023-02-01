@@ -1,3 +1,14 @@
 .footer {
-  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-self: center;
+  align-items: center;
+  background-color: orangered;
+  height: 10vh;
+  address {
+    align-self: center;
+    width: fit-content;
+    font-size: 2rem;
+  }
 }
