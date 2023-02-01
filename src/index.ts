@@ -1,11 +1,12 @@
 /* eslint-disable no-new */
 import { Footer } from './components/footer/footer';
 import { Header } from './components/header/header';
-import { Item } from './components/item/item';
 import { PetListCreator } from './components/list/list';
 import { mockPets } from './mock/pets';
 import './index.scss';
+import { Add } from './components/add/add';
+
 new Header('.root');
 new Footer('.root');
 new PetListCreator('.pet-list', mockPets);
-// New Item('.root', mockPets[0]);
+new Add('.pets-list');
