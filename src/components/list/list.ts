@@ -5,17 +5,18 @@ import { Item } from '../item/item';
 import './list.scss';
 
 export class PetListCreator extends Component {
+  template: string;
   constructor(public selector: string, public pets: Pet[]) {
     super();
-    this.template = this.createTemplate();
+    this.template = '<ul class="pets-list">';
     this.render('afterbegin');
+    this.createElement();
   }
 
-  createTemplate() {
-    const items = this.pets
-      .map((item) => new Item('.list-pets', item))
-      .join('\n');
-    return `  <ul class="pets-list">  ${items} </ul>
-    `;
+  createElement() {
+    const items: string = this.pets
+      .map((item) => new Item('.pets-list', item))
+      .join('');
+    return `${items} </ul>`;
   }
 }
