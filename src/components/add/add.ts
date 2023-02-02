@@ -25,9 +25,9 @@ export class Add extends Component {
   }
 
   addEventListeners() {
-    const petName = document.querySelector('#Name');
-    const petSpecie = document.querySelector('#Specie');
-    const petOwner = document.querySelector('#Owner');
+    const petName = document.querySelector('#Name') as HTMLInputElement;
+    const petSpecie = document.querySelector('#Specie') as HTMLInputElement;
+    const petOwner = document.querySelector('#Owner') as HTMLInputElement;
 
     const button = document.querySelector('#Send');
     button?.addEventListener('click', () => {
@@ -42,7 +42,7 @@ export class Add extends Component {
     });
 
     petOwner?.addEventListener('keydown', (event) => {
-      if (event.keyCode == 13) {
+      if (event.key === 'Enter') {
         // eslint-disable-next-line no-new
         new Item(
           '.pets-list',
