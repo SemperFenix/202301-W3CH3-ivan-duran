@@ -1,0 +1,12 @@
+.pets-list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+  list-style: none;
+  gap: 2rem;
+  height: 60vh;
+  background-color: cornflowerblue;
+}
+.root {
+  background-color: darkcyan;
+}

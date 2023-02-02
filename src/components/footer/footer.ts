@@ -13,7 +13,7 @@ export class Footer extends Component {
     // La hacemos de uso interno con la etiqueta private
     return `
     <footer class ="footer">
-      <adress>Contacta con nosotros en el 555-965-874</adress>
+      <address>Contacta con nosotros en el 555-965-874</address>
     </footer>`;
   }
 }
