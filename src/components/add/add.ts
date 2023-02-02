@@ -36,9 +36,9 @@ export class Add extends Component {
         '.pets-list',
         new Pet(petName?.value, petSpecie?.value, petOwner?.value)
       );
-      petName!.value = '';
-      petSpecie!.value = '';
-      petOwner!.value = '';
+      petName.value = '';
+      petSpecie.value = '';
+      petOwner.value = '';
     });
 
     petOwner?.addEventListener('keydown', (event) => {
@@ -46,11 +46,11 @@ export class Add extends Component {
         // eslint-disable-next-line no-new
         new Item(
           '.pets-list',
-          new Pet(petName?.value, petSpecie?.value, petOwner?.value)
+          new Pet(petName.value, petSpecie.value, petOwner.value)
         );
-        petName!.value = '';
-        petSpecie!.value = '';
-        petOwner!.value = '';
+        petName.value = '';
+        petSpecie.value = '';
+        petOwner.value = '';
       }
     });
   }
