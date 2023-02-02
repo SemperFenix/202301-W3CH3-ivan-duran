@@ -14,7 +14,7 @@ export class Header extends Component {
     return `
     <header class ="header">
       <h1>¡Adopta una mascota!</h1>
-     <nav>
+      <nav>
   <ul>
     <li>Home</li>
     <li>Adopta</li>
